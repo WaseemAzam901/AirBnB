@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { IoSearchSharp } from "react-icons/io5";
-import { CiGlobe } from "react-icons/ci";
+import { CiGlobe, CiStar } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { TfiArrowCircleRight } from "react-icons/tfi";
 import { HiAdjustmentsHorizontal } from "react-icons/hi2";
@@ -9,37 +9,36 @@ import { MdOutlineToggleOff } from "react-icons/md";
 export default function Home() {
   return (
     <>
-    <header>
-      <nav className="grid grid-cols-3 px-16 text-sm font-bold items-center border-b-[1px] w-screen h-20">
-        <div>
-          <img src="assets\airbnb-logo.png" alt="" className="h-16 w-28"/>
-        </div>
-
-
-        <div className="flex justify-evenly items-center border rounded-full shadow-md h-12 w-95">
-          <button className="border-r-2 px-4">Any Where</button>
-          <button className="border-r-2 px-4">Any week</button>
-          <button className="text-gray-500 px-4">Any Time</button>
-          <div className="bg-red-500 text-xl rounded-full text-white p-2">
-          <IoSearchSharp/>
-          </div>
-        </div>
-
-
-        <div className="flex justify-end items-center gap-8">
-          <button>Airbnb Your Home</button>
-          <CiGlobe className="text-xl"/>
-
-          <div className="flex items-center gap-2 shadow-md rounded-full p-2  pl-5">
-          <GiHamburgerMenu className="text-xl"/>
-          <button className="bg-black text-white rounded-full text-[10px] text-center h-7 w-7 ">E</button>
+      <header>
+        <nav className="grid grid-cols-3 px-16 text-sm font-bold items-center border-b-[1px] w-screen h-20">
+          <div>
+            <img src="assets\airbnb-logo.png" alt="" className="h-16 w-28" />
           </div>
 
-        </div>
-      </nav>
+          <div className="flex justify-evenly items-center border rounded-full shadow-md h-12 w-95">
+            <button className="border-r-2 px-4">Any Where</button>
+            <button className="border-r-2 px-4">Any week</button>
+            <button className="text-gray-500 px-4">Any Time</button>
+            <div className="bg-red-500 text-xl rounded-full text-white p-2">
+              <IoSearchSharp />
+            </div>
+          </div>
 
-      {/* Category bar */}
-      <div className="flex items-center h-24 space-x-5">
+          <div className="flex justify-end items-center gap-8">
+            <button>Airbnb Your Home</button>
+            <CiGlobe className="text-xl" />
+
+            <div className="flex items-center gap-2 shadow-md rounded-full p-2  pl-5">
+              <GiHamburgerMenu className="text-xl" />
+              <button className="bg-black text-white rounded-full text-[10px] text-center h-7 w-7 ">
+                E
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        {/* Category bar */}
+        <div className="flex items-center h-24 space-x-5">
           <div className="flex justify-center items-center space-x-10">
             <div className="flex flex-col text-gray-400 hover:text-black items-center gap-2 pl-16">
               <img src="/assets/type1.jpeg" alt="" className="h-6 w-6" />
@@ -101,7 +100,7 @@ export default function Home() {
             </div>
 
             <div className="text-2xl">
-              <TfiArrowCircleRight className=""/>
+              <TfiArrowCircleRight className="" />
             </div>
 
             <button className="flex gap-2 justify-around items-center border shadow-md p-4 rounded-xl">
@@ -111,34 +110,98 @@ export default function Home() {
           </div>
         </div>
 
-
         <div className="flex justify-center items-center">
-
-
           <div className="flex justify-between items-center border shadow-md p-4 rounded-xl w-[600px] h-16">
-            
-            
             <div className="flex justify-start">
-              <p className="border-r-2 border-gray-200 font-medium text-base pr-4">Display total price</p>
-              <p className="text-sm text-gray-400 pl-4">Includes all fees, before taxes</p>
+              <p className="border-r-2 border-gray-200 font-medium text-base pr-4">
+                Display total price
+              </p>
+              <p className="text-sm text-gray-400 pl-4">
+                Includes all fees, before taxes
+              </p>
             </div>
-
 
             <div className="text-4xl">
-            <MdOutlineToggleOff />
+              <MdOutlineToggleOff />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main className=" mt-14 mx-10">
+        <div className="grid grid-cols-4">
+          <div className="h-96 w-72">
+            <img src="/assets/img1.jpg" alt="" className="w-72 h-64 rounded-xl" />
+            <div className="flex justify-between mt-2">
+              <p className="text-sm font-medium">Mira Bhayandra, India</p>
+              <div className="flex items-center">
+                <CiStar />
+                <p>4.97</p>
+              </div>
+            </div>
+            <p className="text-gray-400 text-sm">36 kilometer away</p>
+            <p className="text-gray-400 text-sm">2-7 aug</p>
+            <p className="text-sm font-semibold">$22,241 night</p>
+          </div>
+
+          <div className="h-96 w-72">
+            <img src="/assets/img2.jpg" alt="" className="w-72 h-64 rounded-xl" />
+            <div className="flex justify-between mt-2">
+              <p className="text-sm font-medium">Mira Bhayandra, India</p>
+              <div className="flex items-center">
+                <CiStar />
+                <p>4.97</p>
+              </div>
+            </div>
+            <p className="text-gray-400 text-sm">36 kilometer away</p>
+            <p className="text-gray-400 text-sm">2-7 aug</p>
+            <p className="text-sm font-semibold">$22,241 night</p>
+          </div>
+
+          <div className="h-96 w-72">
+            <img src="/assets/img3.jpg" alt=""  className="rounded-xl h-64 w-96"/>
+            <div className="flex justify-between mt-2">
+            <p>Lonavia, Pakistan</p>
+            <div className="flex items-center">
+            <CiStar />
+              <p>5.00</p>
             </div>
             
+            </div>
+            <p className="text-sm text-gray-400">1200 kilometer away</p>
+            <p className="text-sm text-gray-400">9-12 aug</p>
+            <p className="text-sm font-semibold">$22,241</p>
           </div>
+
+          <div className="h-96 w-72">
+            <img src="/assets/img4.jpg" alt=""  className="rounded-xl h-64 w-96"/>
+            <div className="flex justify-between mt-2">
+            <p>Lonavia, Pakistan</p>
+            <div className="flex items-center">
+            <CiStar />
+              <p>5.00</p>
+            </div>
+            
+            </div>
+            <p className="text-sm text-gray-400">1200 kilometer away</p>
+            <p className="text-sm text-gray-400">9-12 aug</p>
+            <p className="text-sm font-semibold">$22,241</p>
+          </div>
+
+
+          
+
+            
+
+          
 
 
         </div>
 
 
-    </header>
+      </main>
 
-    <main></main>
-
-    <footer></footer>
+      <footer></footer>
     </>
   );
 }
