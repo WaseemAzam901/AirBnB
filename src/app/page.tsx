@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <header>
-        <nav className="grid grid-cols-3 px-16 text-sm font-bold items-center border-b-[1px] w-screen h-20">
+        <nav className=" grid grid-cols-3 px-16 text-sm font-bold items-center border-b-[1px] h-20 fixed top-0 bg-white w-screen">
           <div>
             <img src="assets\airbnb-logo.png" alt="" className="h-16 w-28" />
           </div>
@@ -38,8 +38,8 @@ export default function Home() {
         </nav>
 
         {/* Category bar */}
-        <div className="flex items-center h-24 space-x-5">
-          <div className="flex justify-center items-center space-x-10">
+        <div className="flex items-center h-24 space-x-5 fixed bg-white top-20 ">
+          <div className="flex justify-center items-center space-x-12">
             <div className="flex flex-col text-gray-400 hover:text-black items-center gap-2 pl-16">
               <img src="/assets/type1.jpeg" alt="" className="h-6 w-6" />
               <p className="text-xs">Amazing Pool</p>
@@ -110,7 +110,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center">
+
+        {/* Price bar */}
+
+        <div className="flex justify-center items-center p-1 mt-44">
           <div className="flex justify-between items-center border shadow-md p-4 rounded-xl w-[600px] h-16">
             <div className="flex justify-start">
               <p className="border-r-2 border-gray-200 font-medium text-base pr-4">
@@ -131,7 +134,11 @@ export default function Home() {
       <main className=" mt-14 mx-10">
         <div className="grid grid-cols-4">
           <div className="h-96 w-72">
-            <img src="/assets/img1.jpg" alt="" className="w-72 h-64 rounded-xl" />
+            <img
+              src="/assets/img1.jpg"
+              alt=""
+              className="w-72 h-64 rounded-xl"
+            />
             <div className="flex justify-between mt-2">
               <p className="text-sm font-medium">Mira Bhayandra, India</p>
               <div className="flex items-center">
@@ -145,7 +152,11 @@ export default function Home() {
           </div>
 
           <div className="h-96 w-72">
-            <img src="/assets/img2.jpg" alt="" className="w-72 h-64 rounded-xl" />
+            <img
+              src="/assets/img2.jpg"
+              alt=""
+              className="w-72 h-64 rounded-xl"
+            />
             <div className="flex justify-between mt-2">
               <p className="text-sm font-medium">Mira Bhayandra, India</p>
               <div className="flex items-center">
@@ -159,14 +170,17 @@ export default function Home() {
           </div>
 
           <div className="h-96 w-72">
-            <img src="/assets/img3.jpg" alt=""  className="rounded-xl h-64 w-96"/>
+            <img
+              src="/assets/img3.jpg"
+              alt=""
+              className="rounded-xl h-64 w-96"
+            />
             <div className="flex justify-between mt-2">
-            <p>Lonavia, Pakistan</p>
-            <div className="flex items-center">
-            <CiStar />
-              <p>5.00</p>
-            </div>
-            
+              <p>Lonavia, Pakistan</p>
+              <div className="flex items-center">
+                <CiStar />
+                <p>5.00</p>
+              </div>
             </div>
             <p className="text-sm text-gray-400">1200 kilometer away</p>
             <p className="text-sm text-gray-400">9-12 aug</p>
@@ -174,14 +188,17 @@ export default function Home() {
           </div>
 
           <div className="h-96 w-72">
-            <img src="/assets/img4.jpg" alt=""  className="rounded-xl h-64 w-96"/>
+            <img
+              src="/assets/img4.jpg"
+              alt=""
+              className="rounded-xl h-64 w-96"
+            />
             <div className="flex justify-between mt-2">
-            <p>Lonavia, Pakistan</p>
-            <div className="flex items-center">
-            <CiStar />
-              <p>5.00</p>
-            </div>
-            
+              <p>Lonavia, Pakistan</p>
+              <div className="flex items-center">
+                <CiStar />
+                <p>5.00</p>
+              </div>
             </div>
             <p className="text-sm text-gray-400">1200 kilometer away</p>
             <p className="text-sm text-gray-400">9-12 aug</p>
@@ -189,19 +206,107 @@ export default function Home() {
           </div>
 
 
-          
+          <div className="h-96 w-72">
+            <img
+              src="/assets/img1.jpg"
+              alt=""
+              className="w-72 h-64 rounded-xl"
+            />
+            <div className="flex justify-between mt-2">
+              <p className="text-sm font-medium">Mira Bhayandra, India</p>
+              <div className="flex items-center">
+                <CiStar />
+                <p>4.97</p>
+              </div>
+            </div>
+            <p className="text-gray-400 text-sm">36 kilometer away</p>
+            <p className="text-gray-400 text-sm">2-7 aug</p>
+            <p className="text-sm font-semibold">$22,241 night</p>
+          </div>
 
-            
+          <div className="h-96 w-72">
+            <img
+              src="/assets/img2.jpg"
+              alt=""
+              className="w-72 h-64 rounded-xl"
+            />
+            <div className="flex justify-between mt-2">
+              <p className="text-sm font-medium">Mira Bhayandra, India</p>
+              <div className="flex items-center">
+                <CiStar />
+                <p>4.97</p>
+              </div>
+            </div>
+            <p className="text-gray-400 text-sm">36 kilometer away</p>
+            <p className="text-gray-400 text-sm">2-7 aug</p>
+            <p className="text-sm font-semibold">$22,241 night</p>
+          </div>
 
-          
+          <div className="h-96 w-72">
+            <img
+              src="/assets/img3.jpg"
+              alt=""
+              className="rounded-xl h-64 w-96"
+            />
+            <div className="flex justify-between mt-2">
+              <p>Lonavia, Pakistan</p>
+              <div className="flex items-center">
+                <CiStar />
+                <p>5.00</p>
+              </div>
+            </div>
+            <p className="text-sm text-gray-400">1200 kilometer away</p>
+            <p className="text-sm text-gray-400">9-12 aug</p>
+            <p className="text-sm font-semibold">$22,241</p>
+          </div>
+
+          <div className="h-96 w-72">
+            <img
+              src="/assets/img4.jpg"
+              alt=""
+              className="rounded-xl h-64 w-96"
+            />
+            <div className="flex justify-between mt-2">
+              <p>Lonavia, Pakistan</p>
+              <div className="flex items-center">
+                <CiStar />
+                <p>5.00</p>
+              </div>
+            </div>
+            <p className="text-sm text-gray-400">1200 kilometer away</p>
+            <p className="text-sm text-gray-400">9-12 aug</p>
+            <p className="text-sm font-semibold">$22,241</p>
+          </div>
 
 
         </div>
 
-
+        
       </main>
 
-      <footer></footer>
+      <footer>
+        <div className="flex justify-between items-center p-2 fixed bottom-0 w-full px-10 bg-white">
+          <div className="flex text-sm font-medium gap-2 text-gray-500">
+          <p>&copy; 2023 Airbnb, inc</p>
+          <p>.</p>
+          <p>Privacy</p>
+          <p>.</p>
+          <p>Terms</p>
+          <p>.</p>
+          <p>Sitemap</p>
+          <p>.</p>
+          <p>Company details</p>
+          </div>
+
+          <div className="flex gap-2 text-sm font-medium text-gray-600">
+          <CiGlobe className="text-xl" />
+          <p>English(IN)</p>
+          <p>$ PKR</p>
+          <p>Support & resource</p>
+          </div>
+
+        </div>
+      </footer>
     </>
   );
 }
